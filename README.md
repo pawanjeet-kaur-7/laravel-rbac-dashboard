@@ -72,8 +72,7 @@ Once the tables are created, seed the default roles and users for testing.
 
 # During Development
 
-## Compiling assets
-Create build using:
+## Create build using:
 
 `npm run build`
 
