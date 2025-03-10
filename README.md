@@ -33,15 +33,15 @@ Similarly to composer, npm manages javascript, css, and node packages, so make s
 
 So you should make a copy of the .env.example file and name it .env so that you can setup your local deployment configuration in the next few steps.
 
-## On Linux (or macOS):
+### On Linux (or macOS):
 
 `cp .env.example .env`
 
-## On Windows Command Prompt (cmd), use:
+### On Windows Command Prompt (cmd), use:
 
 `copy .env.example .env`
 
-## On Windows PowerShell, use:
+### On Windows PowerShell, use:
 
 `Copy-Item .env.example -Destination .env`
 
