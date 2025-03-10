@@ -33,7 +33,17 @@ Similarly to composer, npm manages javascript, css, and node packages, so make s
 
 So you should make a copy of the .env.example file and name it .env so that you can setup your local deployment configuration in the next few steps.
 
+## On Linux (or macOS):
+
 `cp .env.example .env`
+
+## On Windows Command Prompt (cmd), use:
+
+`copy .env.example .env`
+
+## On Windows PowerShell, use:
+
+`Copy-Item .env.example -Destination .env`
 
 ## 6. Generate an app encryption key
 Laravel requires you to have an app encryption key which is generally randomly generated and stored in your .env file. The app will use this encryption key to encode various elements of your application from cookies to password hashes and more.
@@ -55,16 +65,22 @@ Once your credentials are in the .env file, now you can migrate your database. T
 
 `php artisan migrate`
 
+## 11. Seed Roles and Permissions
+Once the tables are created, seed the default roles and users for testing.
+
+`php artisan db:seed --class=RoleSeeder`
+
 # During Development
+
+## Compiling assets
+Create build using:
+
+`npm run build`
 
 ## Compiling assets
 To compile all sass and js assets using webpack, run the following command.
 
 `npm run dev`
-
-You can also run the following command that will continue running in your terminal and watch all relevant files for changes. Webpack will then automatically recompile your assets when it detects a change.
-
-`npm run watch`
 
 ## Local development server
 To run a local development server you may run the following command. This will start a development server at **http://localhost:8000**.
