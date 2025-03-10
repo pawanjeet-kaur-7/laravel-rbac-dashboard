@@ -16,7 +16,7 @@ Launch a bash console there and clone the project.
 ## 2. cd into the project
 You will need to be inside the project directory that was just created, so cd into it.
 
-`cd project_name`
+`cd laravel-rbac-dashboard`
 
 ## 3. Install composer dependencies
 Whenever you clone a new Laravel project you must now install all of the project dependencies. This is what actually installs Laravel itself, among other necessary packages to get started.
