@@ -1,4 +1,4 @@
-# Laravel 12 - Products Management Skeleton
+# Laravel 12 - RBAC = (Role-Based Access Control)
 
 This guide will help you set up a basic **Laravel 12 Products Management Skeleton App** from scratch, including authentication using **Laravel Breeze & Spatie**.
 
