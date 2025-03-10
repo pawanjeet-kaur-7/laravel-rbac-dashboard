@@ -60,28 +60,28 @@ You will want to allow Laravel to connect to the database that you just created 
 
 In the .env file fill in the **DB_HOST**, **DB_PORT**, **DB_DATABASE**, **DB_USERNAME**, and **DB_PASSWORD** options to match the credentials of the database you just created. This will allow you to run migrations in the next step.
 
-## 10. Migrate the database
+## 9. Migrate the database
 Once your credentials are in the .env file, now you can migrate your database. This will create all the necessary tables in your database.
 
 `php artisan migrate`
 
-## 11. Seed Roles and Permissions
+## 10. Seed Roles and Permissions
 Once the tables are created, seed the default roles and users for testing.
 
 `php artisan db:seed --class=RoleSeeder`
 
 # During Development
 
-## Create build using:
+## 11. Create build using:
 
 `npm run build`
 
-## Compiling assets
+## 12. Compiling assets
 To compile all sass and js assets using webpack, run the following command.
 
 `npm run dev`
 
-## Local development server
+## 13. Local development server
 To run a local development server you may run the following command. This will start a development server at **http://localhost:8000**.
 
 `php artisan serve`
